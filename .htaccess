@@ -1,0 +1,7 @@
+
+Options +FollowSymLinks
+Options -Indexes
+
+RewriteEngine On
+
+RewriteRule ^(\w+)/?$ index.php?controller=$1

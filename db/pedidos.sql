@@ -1,0 +1,4 @@
+DROP IF EXISTS pedidos;
+
+USE pedidos;
+CREATE DATABASE IF NOT EXISTS pedidos;
