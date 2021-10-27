@@ -13,7 +13,7 @@ CREATE TABLE usuarios(
     telefono VARCHAR(255) NOT NULL,
     direccion VARCHAR(255) NOT NULL,
     fecha_nacimiento DATE NOT NULL,
-    fecha_registro DATE NOT NULL,
-    fecha_modificacion DATE NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fecha_modificacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     estado VARCHAR(255) NOT NULL
 );
